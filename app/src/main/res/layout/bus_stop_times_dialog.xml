@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+
+        android:background="@null"
+        android:src="@drawable/ic_back"
+
+        android:scaleType="fitCenter"
+
+        android:padding="5dp"
+        android:gravity="center"
+
+        android:adjustViewBounds="true"
+
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/busStopTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Stop"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/busTimesSV"
+        android:layout_below="@+id/busStopTV"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/busTimesLayout">
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/busTimesSV"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/bottomBtns">
+
+        <ImageButton
+            android:id="@+id/updateBtn"
+            android:src="@drawable/ic_update"
+
+            android:layout_weight="0.50"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+
+            android:background="@null"
+            android:scaleType="fitCenter"
+
+            android:padding="5dp"
+            android:gravity="center"
+
+            android:adjustViewBounds="true"
+
+            android:layout_marginEnd="20dp" />
+
+        <ImageButton
+            android:id="@+id/bookmarkBtn"
+            android:src="@drawable/ic_bookmark_unhighlighted"
+
+            android:layout_weight="0.50"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+
+            android:background="@null"
+            android:scaleType="fitCenter"
+
+            android:padding="5dp"
+            android:gravity="center"
+
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+</RelativeLayout>
